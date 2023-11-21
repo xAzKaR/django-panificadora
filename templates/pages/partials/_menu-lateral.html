@@ -1,0 +1,23 @@
+{% load static %} {% block content %}
+<section class="menu-lateral">
+  <nav class="menu-lateral__navegacao">
+    <a href="#"
+      ><img src="{% static '/assets/ícones/1x/Home - ativo.png' %}" /> Home</a
+    >
+    <a href="#"
+      ><img src="{% static '/assets/ícones/1x/Mais vistas - inativo.png' %}" />
+      Pão</a
+    >
+    <a href="#"
+      ><img src="{% static '/assets/ícones/1x/Novas - inativo.png' %}" /> Novos
+      Pães</a
+    >
+    <a href="#"
+      ><img
+        src="{% static '/assets/ícones/1x/Surpreenda-me - inativo.png' %}"
+      />
+      Surpreenda-me com Pão</a
+    >
+  </nav>
+</section>
+{% endblock %}
