@@ -1,0 +1,188 @@
+{% extends 'pages/base.html' %} {% load static %} {% block content %}
+<div class="pagina-inicial">
+  <main class="principal">
+    <section class="menu-lateral">
+      <nav class="menu-lateral__navegacao">
+        <a href="#"
+          ><img src="{% static '/assets/ícones/1x/Home - ativo.png' %}" />
+          Home</a
+        >
+        <a href="#"
+          ><img
+            src="{% static '/assets/ícones/1x/Mais vistas - inativo.png' %}"
+          />
+          Pão</a
+        >
+        <a href="#"
+          ><img src="{% static '/assets/ícones/1x/Novas - inativo.png' %}" />
+          Novos Pães</a
+        >
+        <a href="#"
+          ><img
+            src="{% static '/assets/ícones/1x/Surpreenda-me - inativo.png' %}"
+          />
+          Surpreenda-me com Pão</a
+        >
+      </nav>
+    </section>
+    <section class="conteudo">
+      <section class="banner">
+        <img
+          class="banner__imagem"
+          src="{% static '/assets/imagens/Banner(2).png' %}"
+          alt="banner qualquer"
+        />
+        <h1 class="banner__titulo">- e</h1>
+      </section>
+      <section class="tags">
+        <p class="tags__titulo">Busque por tags:</p>
+        <ul class="tags__lista">
+          <li class="tags__tag">Alguma Coisa</li>
+          <li class="tags__tag">Outra Coisa</li>
+          <li class="tags__tag">Coisa</li>
+          <li class="tags__tag">Coisinha</li>
+        </ul>
+      </section>
+      <section class="galeria">
+        <div class="cards">
+          <h2 class="cards__titulo">Navegue pela galeria</h2>
+          <ul class="cards__lista">
+            <li class="card">
+              <a href="{% url 'imagem' %}">
+                <img
+                  class="card__imagem"
+                  src="{% static '/assets/imagens/galeria/carina-nebula.png' %}"
+                  alt="foto"
+                />
+              </a>
+              <span class="card__tag">Blablabla</span>
+              <div class="card__info">
+                <p class="card__titulo">Blablabla</p>
+                <div class="card__texto">
+                  <p class="card__descricao">Blablabla</p>
+                  <span>
+                    <img
+                      src="{% static '/assets/ícones/1x/favorite_outline.png' %}"
+                      alt="ícone de coração"
+                    />
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <a href="{% url 'imagem' %}">
+                <img
+                  class="card__imagem"
+                  src="{% static '/assets/imagens/galeria/carina-nebula.png' %}"
+                  alt="foto"
+                />
+              </a>
+              <span class="card__tag">Blablabla</span>
+              <div class="card__info">
+                <p class="card__titulo">Blablabla</p>
+                <div class="card__texto">
+                  <p class="card__descricao">Blablabla</p>
+                  <span>
+                    <img
+                      src="{% static '/assets/ícones/1x/favorite_outline.png' %}"
+                      alt="ícone de coração"
+                    />
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <a href="{% url 'imagem' %}">
+                <img
+                  class="card__imagem"
+                  src="{% static '/assets/imagens/galeria/carina-nebula.png' %}"
+                  alt="foto"
+                />
+              </a>
+              <span class="card__tag">Blablabla</span>
+              <div class="card__info">
+                <p class="card__titulo">Blablabla</p>
+                <div class="card__texto">
+                  <p class="card__descricao">Blablabla</p>
+                  <span>
+                    <img
+                      src="{% static '/assets/ícones/1x/favorite_outline.png' %}"
+                      alt="ícone de coração"
+                    />
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <a href="{% url 'imagem' %}">
+                <img
+                  class="card__imagem"
+                  src="{% static '/assets/imagens/galeria/carina-nebula.png' %}"
+                  alt="foto"
+                />
+              </a>
+              <span class="card__tag">Blablabla</span>
+              <div class="card__info">
+                <p class="card__titulo">Blablabla</p>
+                <div class="card__texto">
+                  <p class="card__descricao">Blablabla</p>
+                  <span>
+                    <img
+                      src="{% static '/assets/ícones/1x/favorite_outline.png' %}"
+                      alt="ícone de coração"
+                    />
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <a href="{% url 'imagem' %}">
+                <img
+                  class="card__imagem"
+                  src="{% static '/assets/imagens/galeria/carina-nebula.png' %}"
+                  alt="foto"
+                />
+              </a>
+              <span class="card__tag">Blablabla</span>
+              <div class="card__info">
+                <p class="card__titulo">Blablabla</p>
+                <div class="card__texto">
+                  <p class="card__descricao">Blablabla</p>
+                  <span>
+                    <img
+                      src="{% static '/assets/ícones/1x/favorite_outline.png' %}"
+                      alt="ícone de coração"
+                    />
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <a href="{% url 'imagem' %}">
+                <img
+                  class="card__imagem"
+                  src="{% static '/assets/imagens/galeria/carina-nebula.png' %}"
+                  alt="foto"
+                />
+              </a>
+              <span class="card__tag">Blablabla</span>
+              <div class="card__info">
+                <p class="card__titulo">Blablabla</p>
+                <div class="card__texto">
+                  <p class="card__descricao">Blablabla</p>
+                  <span>
+                    <img
+                      src="{% static '/assets/ícones/1x/favorite_outline.png' %}"
+                      alt="ícone de coração"
+                    />
+                  </span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
+  </main>
+</div>
+{% endblock %}

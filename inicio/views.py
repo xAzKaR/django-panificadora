@@ -1,6 +1,8 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse('<h1> Teste </h1>')
+    return render(request, 'pages/index.html')
+
+def imagem(request):
+    return render(request, 'pages/imagem.html')
     
