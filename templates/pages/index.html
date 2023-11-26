@@ -1,30 +1,4 @@
 {% extends 'pages/base.html' %} {% load static %} {% block content %}
-<div class="pagina-inicial">
-  <main class="principal">
-    <section class="menu-lateral">
-      <nav class="menu-lateral__navegacao">
-        <a href="#"
-          ><img src="{% static '/assets/ícones/1x/Home - ativo.png' %}" />
-          Home</a
-        >
-        <a href="#"
-          ><img
-            src="{% static '/assets/ícones/1x/Mais vistas - inativo.png' %}"
-          />
-          Pão</a
-        >
-        <a href="#"
-          ><img src="{% static '/assets/ícones/1x/Novas - inativo.png' %}" />
-          Novos Pães</a
-        >
-        <a href="#"
-          ><img
-            src="{% static '/assets/ícones/1x/Surpreenda-me - inativo.png' %}"
-          />
-          Surpreenda-me com Pão</a
-        >
-      </nav>
-    </section>
     <section class="conteudo">
       <section class="banner">
         <img
@@ -45,7 +19,7 @@
       </section>
       <section class="galeria">
         <div class="cards">
-          <h2 class="cards__titulo">Navegue pela galeria</h2>
+          <h2 class="cards__titulo">Navegue pelos nossos produtos</h2>
           <ul class="cards__lista">
             <li class="card">
               <a href="{% url 'imagem' %}">
