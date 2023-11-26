@@ -1,0 +1,24 @@
+{% extends 'pages/base.html' %} {% load static %} {% block content %}
+<section class="conteudo">
+  <section class="imagem">
+    <div class="imagem__conteudo">
+      <div class="imagem__info">
+        <div class="imagem__texto">
+          <h1 class="imagem__texto">Adicionar Novo Produto</h1>
+          <form method="post" action="">
+            {% csrf_token %}
+            <ul>
+              <li class="imagem__texto">Nome: {{ form.nome }}</li>
+              <li class="imagem__texto">Descrição: {{ form.descricao }}</li>
+              <li class="imagem__texto">Preço: {{ form.preco }}</li>
+            </ul>
+            <button type="submit">Adicionar Produto</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+</div>
+</main>
+{% endblock %}

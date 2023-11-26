@@ -1,0 +1,23 @@
+{% extends 'pages/base.html' %} {% load static %} {% block content %}
+<section class="conteudo">
+  <section class="imagem">
+    <div class="imagem__conteudo">
+      <div class="imagem__info">
+        <div class="imagem__texto">
+          <h1 class="imagem__texto">Produtos Disponíveis</h1>
+          <br />
+          <ul class="imagem__texto">
+            {% for produto in produtos %}
+            <li>{{ produto.nome }} - R$ {{ produto.preco }}</li>
+            {% endfor %}
+          </ul>
+          <br />
+          <a href="{% url 'adicionar_produto' %}">Adicionar Novo Produto</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+</div>
+</main>
+{% endblock %}

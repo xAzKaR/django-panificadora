@@ -15,10 +15,9 @@
     <link rel="stylesheet" href="{% static '/styles/style.css' %}" />
   </head>
 
-  {% include 'pages/partials/_header.html'%} 
   <body>
-    {% comment %} {% include 'pages/partials/_menu-lateral.html' %} {% endcomment %}
-    {% block content %}{% endblock %}
+    {% include 'pages/partials/_menu-lateral.html'%} 
+    {% block content %} {% endblock %} 
     {% include 'pages/partials/_rodape.html' %}
   </body>
 </html>

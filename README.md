@@ -1,4 +1,4 @@
-# django-panificadora
+# Django - AzK Panificadora
 
 - Mudamos a timezone e a linguagem do projeto fazendo alterações no arquivo settings.py;
 - Aumentamos a segurança do projeto protegendo a SECRET_KEY e instalando o pacote python-dotenv e criando o arquivo .env;
@@ -17,3 +17,8 @@
     *_header
     *_rodape
     *_menu-lateral : OBS: Travamento no momento para criar uma section para evitar duplicidade de código
+
+- Criação de nova página para compra de novos produtos
+![Adicionar Produto](./imagens/lista_de_produtos.png)
+- Criação de nova página para inserção de novos produtos para venda
+![Adicionar Produto](./imagens/adicionar_produto.png)
